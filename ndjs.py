@@ -20,7 +20,7 @@ if st.button("写入数据"):
     st.session_state.y_list.append(y_input)
     st.success(f"已添加：({x_input}, {y_input})")
 if st.button("写入推荐数据"):
-    st.session_state.x_list.append(0),st.session_state.x_list.append(28.6),st.session_state.x_list.append(61.19),st.session_state.x_list.append(90),st.session_state.x_list.append(90),st.session_state.x_list.append(104.04),st.session_state.x_list.append(118.44)
+    st.session_state.x_list.append(0),st.session_state.x_list.append(28.6),st.session_state.x_list.append(61.19),st.session_state.x_list.append(90),st.session_state.x_list.append(104.04),st.session_state.x_list.append(118.44)
     st.session_state.y_list.append(17),st.session_state.y_list.append(27.5),st.session_state.y_list.append(33),st.session_state.y_list.append(44),st.session_state.y_list.append(51),st.session_state.y_list.append(55)
     st.success(f"已添加：({x_input}, {y_input})")
 # 显示当前数据
