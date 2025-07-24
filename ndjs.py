@@ -12,7 +12,7 @@ if 'y_list' not in st.session_state:
 
 # 输入
 x_input = st.number_input("入射偏振角度(°)", step=0.1, key="x_input")
-y_input = st.number_input("光程(cm)", step=0.1, key="y_input")
+y_input = st.number_input("第一个暗点出现位置(cm)", step=0.1, key="y_input")
 
 # 写入数据
 if st.button("写入数据"):
@@ -25,8 +25,8 @@ if st.button("写入推荐数据"):
     st.success(f"已添加：({x_input}, {y_input})")
 # 显示当前数据
 if st.session_state.x_list:
-    st.markdown(f"**当前 X 数据：** {st.session_state.x_list}")
-    st.markdown(f"**当前 Y 数据：** {st.session_state.y_list}")
+    st.markdown(f"**当前角度数据：** {st.session_state.x_list}")
+    st.markdown(f"**当前光程数据：** {st.session_state.y_list}")
 
 # 计算拟合
 if st.button("计算拟合"):
